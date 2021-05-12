@@ -18,7 +18,7 @@ loadDocA("libros.xml","xml");
 
 function gestionarFicheroXML(xmlDoc){
     let libros = xmlDoc.querySelectorAll("libro");
-    let tabla = document.querySelector("tabla");
+    let tabla = document.querySelector(".tabla");
     console.log(tabla);
 
     for(let i = 0; i < libros.length; i++){
