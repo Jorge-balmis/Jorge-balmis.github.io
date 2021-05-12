@@ -1,5 +1,8 @@
 'use strict';
-function GestionarFicheroXML(fichero,tipo){
+loadDocA("libros.xml","xml");
+
+/*function GestionarFicheroXML(fichero,tipo){
+
     if(tipo == "xml"){
         ArrayETIQUETAS = new Array;
         ArrayETIQUETAS[0] = fichero.GetElementByTag("libreria").childNodes[1].firstChild.nodeValue //E    sto n os deberia de sacar el padre de todos 
@@ -8,4 +11,9 @@ function GestionarFicheroXML(fichero,tipo){
     else{
         alert("Extension no valida");
     }
+}*/
+function gestionarFicheroXML(xmlDoc){
+	
+    alert(xmlDoc);
+	
 }
