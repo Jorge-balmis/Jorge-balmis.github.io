@@ -12,8 +12,19 @@ loadDocA("libros.xml","xml");
         alert("Extension no valida");
     }
 }*/
+// let libros = xmlDoc.querySelectorAll("libro"); //sacame todo lo con el nombre libro
+// let tabla = document.querySelector("tabla"); //sacame todo lo con el nombre tabla
+// tabla.innerHTML += "<div class = 'fila'>"; // + libros[i].textContent </div>// te añade en el html la linea de libro, esto ira en un bucle for
+
 function gestionarFicheroXML(xmlDoc){
-	
+    let libros = xmlDoc.querySelectorAll("libro");
+    let tabla = document.querySelector("tabla");
+
+    for(let i = 0; i < libros.length; i++){
+        tabla.innerHTML += "<div class = 'fila'>" + libros[i].textContent + "</div>";
+    }
+
+
     alert(xmlDoc);
 	
 }
