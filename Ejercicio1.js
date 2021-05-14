@@ -32,6 +32,7 @@ function gestionarFicheroXML(xmlDoc){
         tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"; 
         tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"; 
         tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("precio").textContent + "</div> </div>"; 
+        console.log("Iteración " +  i +  " " + tabla.innerHTML)
     }
 
 
