@@ -22,7 +22,8 @@ function gestionarFicheroXML(xmlDoc){
     //console.log(tabla);
 
     for(let i = 0; i < libros.length; i++){
-        tabla.innerHTML += "<div class = 'fila'>"; 
+        tabla.innerHTML += "<div class = 'fila'>";
+        console.log("Iteración " +  i +  " " + tabla.innerHTML)
         tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("ISBN").textContent + "</div>"; 
         tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("titulo").textContent + "</div>"; 
         tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("nivelProfundidad").textContent + "</div>"; 
