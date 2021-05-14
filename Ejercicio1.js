@@ -22,16 +22,16 @@ function gestionarFicheroXML(xmlDoc){
     //console.log(tabla);
 
     for(let i = 0; i < libros.length; i++){
-        tabla.innerHTML += "<div class = 'fila'>" + libros[i].textContent + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("ISBN") + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("titulo") + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("nivelProfundidad") + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("autores") + "</div>"; 
+        tabla.innerHTML += "<div class = 'fila'>"; 
+        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("ISBN").textContent + "</div>"; 
+        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("titulo").textContent + "</div>"; 
+        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("nivelProfundidad").textContent + "</div>"; 
+        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("autores").textContent + "</div>"; 
         // tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("autores") + "</div>"; // tengo que hacer tambien autor?
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("editorial") + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("fechaPublicacion") + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("paginaWeb") + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("precio") + "</div>"; 
+        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("editorial").textContent + "</div>"; 
+        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"; 
+        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"; 
+        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("precio").textContent + "</div> </div>"; 
     }
 
 
