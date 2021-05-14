@@ -19,21 +19,21 @@ loadDocA("libros.xml","xml");
 function gestionarFicheroXML(xmlDoc){
     let libros = xmlDoc.querySelectorAll("libro");
     let tabla = document.querySelector(".tabla");
+    let fila = ""
     //console.log(tabla);
 
     for(let i = 0; i < libros.length; i++){
-        tabla.innerHTML += "<div class = 'fila'>";
-        console.log("Iteración " +  i +  " " + tabla.innerHTML)
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("ISBN").textContent + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("titulo").textContent + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("nivelProfundidad").textContent + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("autores").textContent + "</div>"; 
+        fila = "<div class = 'fila'>";
+        console.log("Iteración " +  i +  " " + fila)
+        fila += "<div class = 'celda'>" + libros[i].querySelector("ISBN").textContent + "</div>"; 
+        fila += "<div class = 'celda'>" + libros[i].querySelector("titulo").textContent + "</div>"; 
+        fila += "<div class = 'celda'>" + libros[i].querySelector("nivelProfundidad").textContent + "</div>"; 
+        fila += "<div class = 'celda'>" + libros[i].querySelector("autores").textContent + "</div>"; 
         // tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("autores") + "</div>"; // tengo que hacer tambien autor?
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("editorial").textContent + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"; 
-        tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("precio").textContent + "</div> </div>"; 
-        console.log("Iteración " +  i +  " " + tabla.innerHTML)
+        fila += "<div class = 'celda'>" + libros[i].querySelector("editorial").textContent + "</div>"; 
+        filaL += "<div class = 'celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"; 
+        fila += "<div class = 'celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"; 
+        fila += "<div class = 'celda'>" + libros[i].querySelector("precio").textContent + "</div> </div>"; 
     }
 
 
