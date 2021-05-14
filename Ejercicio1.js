@@ -23,7 +23,7 @@ function gestionarFicheroXML(xmlDoc){
     //console.log(tabla);
 
     for(let i = 0; i < libros.length; i++){
-        fila = "<div class = 'fila'>";
+        fila += "<div class = 'fila'>";
         console.log("Iteración " +  i +  " " + fila)
         fila += "<div class = 'celda'>" + libros[i].querySelector("ISBN").textContent + "</div>"; 
         fila += "<div class = 'celda'>" + libros[i].querySelector("titulo").textContent + "</div>"; 
@@ -31,10 +31,14 @@ function gestionarFicheroXML(xmlDoc){
         fila += "<div class = 'celda'>" + libros[i].querySelector("autores").textContent + "</div>"; 
         // tabla.innerHTML += "<div class = 'celda'>" + libros[i].querySelector("autores") + "</div>"; // tengo que hacer tambien autor?
         fila += "<div class = 'celda'>" + libros[i].querySelector("editorial").textContent + "</div>"; 
-        filaL += "<div class = 'celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"; 
+        fila += "<div class = 'celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"; 
         fila += "<div class = 'celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"; 
         fila += "<div class = 'celda'>" + libros[i].querySelector("precio").textContent + "</div> </div>"; 
+
+    
     }
+
+    tabla.innerHTML = fila;
 
 
 
