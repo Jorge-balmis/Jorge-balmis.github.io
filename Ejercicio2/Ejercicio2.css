@@ -28,10 +28,11 @@ main{
     /* flex: flex; */
     flex-direction: row;
     /* align-self: left; */
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-content: flex-start;
     max-width: 20vw;
     min-height: 5vh;
-    padding:  15px;
+    padding:  12px;
     border-radius: 21px;
 }
 .TextoReceptor{
@@ -42,9 +43,10 @@ main{
     /* flex: flex; */
     flex-direction: row;
     /* align-self: right; */
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    align-content: flex-end;
     max-width: 20vw;
     min-height: 5vh;
-    padding: 15px;
+    padding: 12px;
     border-radius: 21px;
 }
