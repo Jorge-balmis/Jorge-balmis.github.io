@@ -20,7 +20,11 @@ main{
     padding: 10px;
 }
 
-
+.Izquierda{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
 
 
 .TextoEmisor{
@@ -32,12 +36,19 @@ main{
     flex-direction: row;
     /* align-self: left; */
     /* align-items: flex-start; */
-    align-content: flex-start;
+    /* align-content: flex-start; */
     max-width: 20vw;
     min-height: 5vh;
     padding:  12px;
     border-radius: 21px;
 }
+
+.Derecha{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
 .TextoReceptor{
     font-family: cursive;
     background-color: rgb(58, 1, 65);
@@ -47,7 +58,7 @@ main{
     flex-direction: row;
     /* align-self: right; */
     /* align-items: flex-end; */
-    align-content: flex-end;
+    /* align-content: flex-end; */
     max-width: 20vw;
     min-height: 5vh;
     padding: 12px;

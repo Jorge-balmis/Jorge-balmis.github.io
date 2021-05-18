@@ -10,10 +10,10 @@ function gestionarFicheroTXT(cadena){
 
     for(let i = 0; i < mensajes.length; i++){
         if(i%2 == 0){
-            fila += "<div class = 'TextoEmisor'>" + mensajes[i] + "</div>"; 
+            fila += "<div class = 'Izquierda'><div class = 'TextoEmisor'>" + mensajes[i] + "</div></div>"; 
         }
         else{
-            fila += "<div class = 'TextoReceptor'>" + mensajes[i] + "</div>"; 
+            fila += "<div class = 'Derecha'> <div class = 'TextoReceptor'>" + mensajes[i] + "</div></div>"; 
         }
     }
     main.innerHTML = fila;
