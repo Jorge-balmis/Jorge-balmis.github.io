@@ -3,7 +3,7 @@ loadDocA("mensaje.txt","txt");
 
 
 function gestionarFicheroTXT(cadena){
-    let mensajes = new Array;
+    // let mensajes = new Array;
     mensajes = cadena.split("\n");
     let body = document.querySelector("body");
     let fila = "";
