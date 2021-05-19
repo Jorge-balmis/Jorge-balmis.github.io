@@ -8,7 +8,6 @@ function ComprobarCampos(){
     
     let errores = "";
     let capaErrores = document.getElementsByClassName(".errores")
-    let
 
     if(!usuario.match(/^[A-Z].*[0-9]$/)) errores += "<h1>El usuario no es correcto, tiene que ser primera mayuscula y la ultima un numero</h1>"; //No funciona pero si que entra en el if
     if(!contrasena.match(/^[0-9].*[A-Z]{8,8}$/)) errores += "Contraseña no valida"; //No funciona ni el if
