@@ -1,6 +1,6 @@
 'use strict';
-loadDocA("mensaje.txt","txt");
-
+// loadDocA("mensaje.txt","txt");
+setTimeout(loadDocA("mensaje.txt","txt"),200)
 
 function gestionarFicheroTXT(cadena){
     // let mensajes = new Array;
