@@ -1,7 +1,7 @@
 
-let Elemento = document.getElementsByTagName("Boton")// [0].addEventListener("click",ComprobarCampos);
+let Elemento = document.getElementById("Boton")// [0].addEventListener("click",ComprobarCampos);
 // alert(Elemento); //Parece que funciona
-Elemento.addEventListener("click",ComprobarCampos);
+Elemento.addEventListener("click",ComprobarCampos,false);
 
 function ComprobarCampos(Email, Contrasena){
 
