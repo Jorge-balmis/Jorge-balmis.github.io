@@ -18,7 +18,7 @@ function ComprobarCampos(Email, Contrasena){
         alert("Tu email es del dominio del Doctor balmis")
     }
     else{
-        EtiquetaEmail.className = "input:invalid";
+        EtiquetaEmail.className = ".input:invalid";
         // alert("Cagaste")
     }
     
