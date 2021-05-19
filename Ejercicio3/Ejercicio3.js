@@ -15,11 +15,12 @@ function ComprobarCampos(Email, Contrasena){
     // alert("Extension de email" + EstensionEmail[1]);
     // console.log("Extension de email" + EstensionEmail[1]);
     if(email.includes("@iesdoctorbalmis.com")){
-        alert("Tu email es del dominio del Doctor balmis")
+        alert("Tu email es del dominio del Doctor balmis");
+        alert("Longitud de contraseña: " + Contrasena.lenght);
     }
     else{
-        EtiquetaEmail.className = ".input:invalid";
-        // alert("Cagaste")
+        // EtiquetaEmail.className = ".input:invalid";
+        alert("Losiento solo son validas los emails del dominio doctor balmis")
     }
     
     //     if(!isNaN(Contrasena) && Contrasena.length == 8){
