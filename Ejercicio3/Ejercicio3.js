@@ -1,6 +1,3 @@
-
-// let Elemento = document.getElementById("Boton")
-// Elemento.addEventListener("click",ComprobarCampos,false);
 document.getElementById("Boton").addEventListener("click",ComprobarCampos,false);
 
 function ComprobarCampos(){
