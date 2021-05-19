@@ -11,6 +11,8 @@ function ComprobarCampos(Email, Contrasena){
 
     let EstensionEmail = Email.split("@")[1];
     alert("Extension de email" + EstensionEmail);
+    console.log("Extension de email" + EstensionEmail);
+    
     //     if(!isNaN(Contrasena) && Contrasena.length == 8){
     //         return true;
     //    }
