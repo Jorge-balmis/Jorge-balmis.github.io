@@ -16,7 +16,7 @@ function ComprobarCampos(Email, Contrasena){
     // console.log("Extension de email" + EstensionEmail[1]);
     if(email.includes("@iesdoctorbalmis.com")){
         alert("Tu email es del dominio del Doctor balmis");
-        alert("Longitud de contraseña: " + Contrasena.lenght);
+        alert("Longitud de contraseña: " + Contrasena.ToString().lenght);
     }
     else{
         // EtiquetaEmail.className = ".input:invalid";
