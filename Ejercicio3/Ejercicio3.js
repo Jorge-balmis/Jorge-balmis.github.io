@@ -6,10 +6,11 @@ Elemento.addEventListener("click",ComprobarCampos,false);
 function ComprobarCampos(Email, Contrasena){
     email = document.getElementById("email").value;
     contrasena = document.getElementById("contrasena").value;
-    alert("Email: "+ email + " Contraseña: " + contrasena);
+    // alert("Email: "+ email + " Contraseña: " + contrasena);
     // console.log("Email: "+ email + " Contraseña: " + contrasena);
 
-    //     let finalEmail = Email.spl 
+    let EstensionEmail = Email.split("@")[1];
+    alert(EstensionEmail);
     //     if(!isNaN(Contrasena) && Contrasena.length == 8){
     //         return true;
     //    }
