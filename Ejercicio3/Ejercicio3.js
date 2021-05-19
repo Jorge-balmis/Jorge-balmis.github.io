@@ -12,5 +12,4 @@ function ComprobarCampos(){
         else alert("Contraseña no valida, recuerda que tiene que ser 8 digitos");  // EtiquetaContrasena.className = ".input:invalid";
     }
     else alert("Losiento solo son validas los emails del dominio doctor balmis");// EtiquetaEmail.className = ".input:invalid";
-    }
 }
