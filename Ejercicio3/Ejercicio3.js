@@ -9,9 +9,9 @@ function ComprobarCampos(Email, Contrasena){
     // alert("Email: "+ email + " Contraseña: " + contrasena);
     // console.log("Email: "+ email + " Contraseña: " + contrasena);
 
-    let EstensionEmail = Email.split("@")[1];
-    alert("Extension de email" + EstensionEmail);
-    console.log("Extension de email" + EstensionEmail);
+    let EstensionEmail = Email.split("@");
+    alert("Extension de email" + EstensionEmail[1]);
+    console.log("Extension de email" + EstensionEmail[1]);
     
     //     if(!isNaN(Contrasena) && Contrasena.length == 8){
     //         return true;
