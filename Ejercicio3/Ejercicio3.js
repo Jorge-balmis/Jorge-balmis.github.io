@@ -4,7 +4,9 @@ let Elemento = document.getElementById("Boton")// [0].addEventListener("click",C
 Elemento.addEventListener("click",ComprobarCampos,false);
 
 function ComprobarCampos(Email, Contrasena){
+    EtiquetaEmail = document.getElementById("email");
     email = document.getElementById("email").value;
+    EtiquetaContrasena = document.getElementById("contrasena");
     contrasena = document.getElementById("contrasena").value;
     // alert("Email: "+ email + " Contraseña: " + contrasena);
     // console.log("Email: "+ email + " Contraseña: " + contrasena);
@@ -16,7 +18,8 @@ function ComprobarCampos(Email, Contrasena){
         alert("Tu email es del dominio del Doctor balmis")
     }
     else{
-        alert("Cagaste")
+        EtiquetaEmail.className = "input:invalid";
+        // alert("Cagaste")
     }
     
     //     if(!isNaN(Contrasena) && Contrasena.length == 8){
