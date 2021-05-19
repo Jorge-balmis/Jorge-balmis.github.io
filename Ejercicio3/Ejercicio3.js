@@ -1,0 +1,14 @@
+
+
+document.getElementsByTagName("Boton").addEventListener("click",ComprobarCampos);
+
+
+function ComprobarCampos(Email, Contrasena){
+
+//     let finalEmail = Email.spl 
+//     if(!isNaN(Contrasena) && Contrasena.length == 8){
+//         return true;
+//    }
+//     return false;
+alert("Holaaaaaaaaaaaa");
+}
