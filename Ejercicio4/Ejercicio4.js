@@ -23,5 +23,5 @@ function ComprobarCampos(){
 
 
 
-    capaErrores.textContent = errores;
+    document.getElementById("errores").textContent = errores;
 }
