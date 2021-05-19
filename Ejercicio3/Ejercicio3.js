@@ -3,7 +3,7 @@ let Elemento = document.getElementById("Boton")// [0].addEventListener("click",C
 // alert(Elemento); //Parece que funciona
 Elemento.addEventListener("click",ComprobarCampos,false);
 
-function ComprobarCampos(Email, Contrasena){
+function ComprobarCampos(){
     EtiquetaEmail = document.getElementById("email");
     email = document.getElementById("email").value;
     EtiquetaContrasena = document.getElementById("contrasena");
@@ -15,8 +15,13 @@ function ComprobarCampos(Email, Contrasena){
     // alert("Extension de email" + EstensionEmail[1]);
     // console.log("Extension de email" + EstensionEmail[1]);
     if(email.includes("@iesdoctorbalmis.com")){
-        alert("Tu email es del dominio del Doctor balmis");
-        alert("Longitud de contraseña: " + Contrasena.toString().lenght);
+        // alert("Tu email es del dominio del Doctor balmis");
+        if(!isNaN(contrasena) && contrasena > 9999999 && contrasena < 100000000){
+            alert("Todo correcto");
+        }
+        else{
+            alert("Contraseña no valida, recuerda que tiene que ser 8 digitos");
+        }
     }
     else{
         // EtiquetaEmail.className = ".input:invalid";
