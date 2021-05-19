@@ -1,7 +1,6 @@
 
-
-document.getElementsByTagName("Boton")[0].addEventListener("click",ComprobarCampos);
-
+let Elemento = document.getElementsByTagName("Boton")// [0].addEventListener("click",ComprobarCampos);
+alert(Elemento);
 
 function ComprobarCampos(Email, Contrasena){
 
