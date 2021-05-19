@@ -23,7 +23,7 @@ form{
 }
 
 .errores{
-    min-width: 40vw;
-    min-height: 50vh;
+    max-width: 40vw; /*Al tenerlo al maximo dependera de la cantidad de errores que le pongamos para su alto o anchura*/
+    max-height: 50vh;
     color: #791200;
 }
