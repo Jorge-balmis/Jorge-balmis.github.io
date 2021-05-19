@@ -9,9 +9,15 @@ function ComprobarCampos(Email, Contrasena){
     // alert("Email: "+ email + " Contraseña: " + contrasena);
     // console.log("Email: "+ email + " Contraseña: " + contrasena);
 
-    let EstensionEmail = Email.split("@");
-    alert("Extension de email" + EstensionEmail[1]);
-    console.log("Extension de email" + EstensionEmail[1]);
+    // let EstensionEmail = Email.split("@"); //dice que split no es una funcion, voy a usar includes, mejor 
+    // alert("Extension de email" + EstensionEmail[1]);
+    // console.log("Extension de email" + EstensionEmail[1]);
+    if(email.includes("@iesdoctorbalmis.com")){
+        alert("Tu email es del dominio del Doctor balmis")
+    }
+    else{
+        alert("Cagaste")
+    }
     
     //     if(!isNaN(Contrasena) && Contrasena.length == 8){
     //         return true;
