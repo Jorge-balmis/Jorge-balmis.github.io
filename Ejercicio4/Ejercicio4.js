@@ -13,7 +13,7 @@ function ComprobarCampos(){
     let capaErrores = document.getElementsByClassName(".errores")
 
     if(!usuario.match(/^[A-Z].*[0-9]$/)) errores += "<h1>El usuario no es correcto, tiene que ser primera mayuscula y la ultima un numero</h1>"; 
-    if(!contrasena.match(/^[0-9].*[A-Z]{8,8}$/)) errores += "<h1>Contraseña no valida/</h1>"; //No funciona ni el if
+    if(!contrasena.match(/^[0-9].*[A-Z]{8}$/)) errores += "<h1>Contraseña no valida/</h1>"; //No funciona ni el if
     if(contrasena != repitaContrasena) errores += "<h1>Las contraseñas no son iguales</h1>";
     if(isNaN(edad)) errores += "<h1>La edad debe ser numerica<h1>";
     if(isNaN(telefono) || !telefono.match(/^[6,7,9]/)) errores += "<h1>El telefono no es valido, tiene que empezar por 6,7,9 y ser numerico</h1>";
