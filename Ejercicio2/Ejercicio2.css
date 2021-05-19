@@ -23,12 +23,13 @@ main{
 .Izquierda{
     display: flex;
     flex-direction: row;
-    /* align-content: flex-end; */
-    align-self:flex-start;
+/*     align-content: flex-end; */
+    align-self:flex-end;
     max-width: 100vw;
     min-height: 5vh;
     padding:5px;
 }
+
 
 .TextoEmisor{
     font-family: cursive;
@@ -42,14 +43,14 @@ main{
     border-radius: 21px;
 }
 
-.derecha{
+.Derecha{
     display: flex;
     flex-direction: row;
-/*     align-content: flex-end; */
-    align-self:flex-end;
+    align-content: flex-end;
     max-width: 100vw;
     min-height: 5vh;
     padding:5px;
+
 }
 
 .TextoReceptor{
