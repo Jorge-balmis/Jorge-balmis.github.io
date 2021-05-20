@@ -1,0 +1,13 @@
+
+.tabla{
+    display: table;
+    border: 1px solid #000000;
+}
+.linea{
+    display:table-row;
+    border: 1px solid #000000;
+}
+.celda{
+    display:table-cell;
+    border: 1px solid #000000;
+}
