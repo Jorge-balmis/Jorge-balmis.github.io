@@ -1,6 +1,11 @@
 'use strict';
 // loadDocA("mensaje.txt","txt");
-setTimeout(loadDocA("mensaje.txt","txt"),200); //Creo que no funciona
+// setTimeout(loadDocA("mensaje.txt","txt"),200); //Creo que no funciona
+setInterval(CargarFichero,5000);// 5000 son 5 segundos
+
+function CargarFichero(){
+    loadDocA("mensaje.txt","txt")
+}
 
 function gestionarFicheroTXT(cadena){
     // let mensajes = new Array;
