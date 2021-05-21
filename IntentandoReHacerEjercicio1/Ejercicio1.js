@@ -18,8 +18,16 @@ function gestionarFicheroXML(documento){
             //Poner nombre del libro
             libro = libreria.querySelectorAll("libro")
             //Datos del libro
+            datos += "<div class='linea'> <div class = 'celda'>" + libro[j].querySelector("ISBN").textContent + "</div>"; 
+            datos += "<div class = 'celda'>" + libro[j].querySelector("titulo").textContent + "</div>"; 
+            datos += "<div class = 'celda'>" + libro[j].querySelector("nivelProfundidad").textContent + "</div>"; 
+            datos += "<div class = 'celda'>" + libro[j].querySelector("autores").textContent + "</div>"; 
+            datos += "<div class = 'celda'>" + libro[j].querySelector("editorial").textContent + "</div>"; 
+            datos += "<div class = 'celda'>" + libro[j].querySelector("fechaPublicacion").textContent + "</div>"; 
+            datos += "<div class = 'celda'>" + libro[j].querySelector("paginaWeb").textContent + "</div>"; 
+            datos += "<div class = 'celda'>" + libro[j].querySelector("precio").textContent + "</div> </div>"; 
         }
-        datos += "</div>"
+        datos += "</div>";
     }
     capaDatos.innerHTML = datos;
 }
