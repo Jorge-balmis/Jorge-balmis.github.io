@@ -5,9 +5,9 @@ function gestionarFicheroXML(documento){
     let libro;
     let capaDatos = document.querySelector("body");
     let datos = "";
-    let PreciosLibro = Number(documento.querySelectorAll("precio"));
-    PreciosLibro = PreciosLibro.sort((n1,n2)=>n1-n2);
-    alert(PreciosLibro[0]);
+    // let PreciosLibro = Number(documento.querySelectorAll("precio"));
+    // PreciosLibro = PreciosLibro.sort((n1,n2)=>n1-n2);
+    // alert(PreciosLibro[0]);
     // var min = 0;
     // PreciosLibro.forEach(numero => {
     //     if(numero<min) (min=numero);   
