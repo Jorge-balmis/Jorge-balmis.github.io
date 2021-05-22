@@ -7,8 +7,8 @@ function gestionarFicheroXML(documento){
     let datos = "";
     let PreciosLibro = documento.querySelectorAll("precio");
     alert(PreciosLibro[0].textContent);
-    PreciosLibro = PreciosLibro.sort((n1,n2)=>n1-n2)
-    alert("Supuestamente el precio mas bajo es: " + PreciosLibro[0]);
+    alert(PreciosLibro.sort((n1,n2) => n1-n2))
+    // alert("Supuestamente el precio mas bajo es: " + PreciosLibro[0]);
         for(let i = 0; i < libreria.length; i++ )//Se recore las librerias
         {
             datos += "<div class='tabla'>"
