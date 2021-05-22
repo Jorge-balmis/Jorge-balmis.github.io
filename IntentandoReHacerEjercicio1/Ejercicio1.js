@@ -7,9 +7,10 @@ function gestionarFicheroXML(documento){
     let datos = "";
     let PreciosLibro = documento.querySelectorAll("precio");
     let min = 0;
-    alert(PreciosLibro.forEach(numero => {
+    PreciosLibro.forEach(numero => {
         if(numero<min) (min=numero);   
-    }));
+    });
+    alert(min)
     // alert("Supuestamente el precio mas bajo es: " + PreciosLibro[0]);
         for(let i = 0; i < libreria.length; i++ )//Se recore las librerias
         {
