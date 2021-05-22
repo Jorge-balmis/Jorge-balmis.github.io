@@ -6,7 +6,9 @@ function gestionarFicheroXML(documento){
     let capaDatos = document.querySelector("body");
     let datos = "";
     let PreciosLibro = documento.querySelectorAll("precio");
-    alert(Math.min(PreciosLibro))
+    alert(PreciosLibro.forEach(numero => {
+        if(numero<min) (min=numero);   
+    }));
     // alert("Supuestamente el precio mas bajo es: " + PreciosLibro[0]);
         for(let i = 0; i < libreria.length; i++ )//Se recore las librerias
         {
