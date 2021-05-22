@@ -1,0 +1,14 @@
+1-Teniendo el Ajax en en la carpeta actual y un xml llamado videojuegos guardame en una bariable el dodo principal BDVideojuegos ()El XML que le pasamos atraves del Ajax lo puedes llamar Documento.
+let NodoCentral = Documento.querySelector("BDVideojuegos");
+
+2-Dentro de este nodo hay varos videojuegos (con la etiqueta videojuego) guardalos en una array y mostralos en el HTML
+
+Let Videojuegos = NodoCentral.querySelectorAll("videojuegos");
+let textoAHTML = "";
+let body = document.querySelector("body");
+
+for(let i = 0; i<Videojuegos.lenght ;i++){
+	textoAHTML += "<div class='videojuego'>" + Videojuegos[i].textContent + "</div>";
+}
+
+body.innerHTML = textoAHTML;
