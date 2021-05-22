@@ -6,11 +6,12 @@ function gestionarFicheroXML(documento){
     let capaDatos = document.querySelector("body");
     let datos = "";
     let PreciosLibro = documento.querySelectorAll("precio");
-    var min = 0;
-    PreciosLibro.forEach(numero => {
-        if(numero<min) (min=numero);   
-    });
-    alert(min)
+    PreciosLibro = PreciosLibro.sort((n1,n2)=>n1-n2);
+    alert(PreciosLibro[0]);
+    // var min = 0;
+    // PreciosLibro.forEach(numero => {
+    //     if(numero<min) (min=numero);   
+    // }); No se como almacenar el minimo
     // alert("Supuestamente el precio mas bajo es: " + PreciosLibro[0]);
         for(let i = 0; i < libreria.length; i++ )//Se recore las librerias
         {
