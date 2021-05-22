@@ -1,23 +1,16 @@
 'use strict';
 loadDocA("libros.xml","xml")
 function gestionarFicheroXML(documento){
-    // let busquedaLibros = documento.querySelectorAll("busquedaLibros")
     let libreria = documento.querySelectorAll("libreria");
     let libro;
     let capaDatos = document.querySelector("body");
     let datos = "";
-    // alert("Objeto documento" + documento)
-    // alert("Etiqueta Libreria posicion 0" + libreria[0])
-    //for(let i = 0; i < busquedaLibros.length; i++)//Este bucle se ira mirando toda las librerias y actualizara los datos de sus hijos
-    //{
-        //libreria = busquedaLibros.querySelectorAll("libreria")
-        //Habro el div de tabla es la clase ".tabla"
-        datos += "<div class='tabla'>"
+    let PreciosLibro = documento.querySelectorAll("precio").textContent;
+    alert(PreciosLibro.join(", "));
         for(let i = 0; i < libreria.length; i++ )//Se recore las librerias
         {
-            // alert(libreria[i])
-            // alert(libreria)
-            //Poner nombre del libro
+            datos += "<div class='tabla'>"
+
             libro = libreria[i].querySelectorAll("libro")
             datos += "<div class='nombre'>" + libreria[i].querySelector("nombre").textContent + "</div>"; 
             for(let j = 0; j < libro.length; j++){ //Datos del libro
@@ -31,8 +24,7 @@ function gestionarFicheroXML(documento){
                 datos += "<div class = 'celda'>" + libro[j].querySelector("paginaWeb").textContent + "</div>"; 
                 datos += "<div class = 'celda'>" + libro[j].querySelector("precio").textContent + "</div> </div>"; 
             }
+            datos += "</div>";
         }
-        datos += "</div>";
-    //}
     capaDatos.innerHTML = datos;
 }
