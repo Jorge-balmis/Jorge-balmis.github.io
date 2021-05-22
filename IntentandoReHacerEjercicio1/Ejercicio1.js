@@ -15,6 +15,8 @@ function gestionarFicheroXML(documento){
         datos += "<div class='tabla'>"
         for(let i = 0; i < libreria.length; i++ )//Se recore las librerias
         {
+            alert(libreria[i])
+            alert(libreria)
             //Poner nombre del libro
             libro = libreria[i].querySelectorAll("libro")
             //Datos del libro
