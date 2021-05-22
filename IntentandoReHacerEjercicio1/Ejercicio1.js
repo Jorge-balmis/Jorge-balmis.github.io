@@ -3,7 +3,7 @@ loadDocA("libros.xml","xml")
 function gestionarFicheroXML(documento){
     // let busquedaLibros = documento.querySelectorAll("busquedaLibros")
     let libreria = documento.querySelectorAll("libreria");
-    let libros;
+    let libro;
     let capaDatos = document.querySelector("body");
     let datos = "";
     // alert("Objeto documento" + documento)
