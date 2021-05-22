@@ -15,12 +15,12 @@ function gestionarFicheroXML(documento){
         datos += "<div class='tabla'>"
         for(let i = 0; i < libreria.length; i++ )//Se recore las librerias
         {
-            alert(libreria[i])
-            alert(libreria)
+            // alert(libreria[i])
+            // alert(libreria)
             //Poner nombre del libro
             libro = libreria[i].querySelectorAll("libro")
-            //Datos del libro
-            for(let j = 0; j < libro.length; j++){
+            datos += "<div class='nombre'>" + libreria[i].querySelector("nombre").textContent + "</div>"; 
+            for(let j = 0; j < libro.length; j++){ //Datos del libro
 
                 datos += "<div class='linea'> <div class = 'celda'>" + libro[j].querySelector("ISBN").textContent + "</div>"; 
                 datos += "<div class = 'celda'>" + libro[j].querySelector("titulo").textContent + "</div>"; 
