@@ -5,8 +5,8 @@ function gestionarFicheroXML(documento){
     let libro;
     let capaDatos = document.querySelector("body");
     let datos = "";
-    let PreciosLibro = documento.querySelectorAll("precio").textContent;
-    alert(PreciosLibro[0]);
+    // let PreciosLibro = documento.querySelectorAll("precio").textContent;
+    // alert(PreciosLibro[0]);
         for(let i = 0; i < libreria.length; i++ )//Se recore las librerias
         {
             datos += "<div class='tabla'>"
