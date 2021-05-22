@@ -1,8 +1,8 @@
 'use strict';
 loadDocA("libros.xml","xml")
 function gestionarFicheroXML(documento){
-    let busquedaLibros = documento.querySelectorAll("busquedaLibros")
-    let libreria;
+    // let busquedaLibros = documento.querySelectorAll("busquedaLibros")
+    let libreria = documento.querySelectorAll("libreria");
     let libros;
     let capaDatos = document.querySelector("body");
     let datos = "";
@@ -10,7 +10,7 @@ function gestionarFicheroXML(documento){
     // alert("Etiqueta Libreria posicion 0" + libreria[0])
     //for(let i = 0; i < busquedaLibros.length; i++)//Este bucle se ira mirando toda las librerias y actualizara los datos de sus hijos
     //{
-        libreria = busquedaLibros.querySelectorAll("libreria")
+        //libreria = busquedaLibros.querySelectorAll("libreria")
         //Habro el div de tabla es la clase ".tabla"
         datos += "<div class='tabla'>"
         for(let i = 0; i < libreria.length; i++ )//Se recore las librerias
