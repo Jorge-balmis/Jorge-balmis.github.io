@@ -1,12 +1,15 @@
 <capaBase>
 
 <serie>
+<nombre>serie1</nombre>
 <calificacion>1</calificacion>
 </serie>
 <serie>
+<nombre>serie2</nombre>
 <calificacion>2</calificacion>
 </serie>
 <serie>
+<nombre>serie3</nombre>
 <calificacion>3</calificacion>
 </serie>
 
